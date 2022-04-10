@@ -1,0 +1,724 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+        --themered: #e43a47;
+        --grey: #efefef;
+}
+
+html{
+        scroll-behavior: smooth;
+}
+
+button,
+body {
+        font-family: 'Poppins', sans-serif;
+}
+
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+}
+
+p{
+        font-size: 14px;
+        line-height: 26px;
+}
+
+.fullcontainer {
+        width: 100%;
+}
+
+.container{
+        width: 1140px;
+        margin: auto;
+}
+
+.sectiontitle{
+        width: 300px;
+        border-bottom: 3px solid var(--themered);
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 200;
+        margin: 0 auto 50px;
+        padding:10px 0;
+        text-transform: uppercase;
+}
+
+section {
+        padding: 100px 0;
+        position: relative;
+}
+
+
+
+/*COMMON STYLE ENDS HERE*/
+
+
+/*HOME STYLE STARTS*/
+
+header{
+        width: 100%;
+        background-color: rgba(0,0,0,0.6);
+        position: fixed;
+        z-index: 2;
+}
+
+header .container{
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 0;
+       
+}
+header .container .logo{
+        padding: 14px 0;
+        height: 75px;
+}
+
+header .container .logo img{
+        height: 100%;
+}
+
+header nav ul{
+        list-style-type: none;
+}
+
+header nav ul li{
+        display:inline-block;
+}
+
+header nav ul li a {
+        display: inline-block;
+        height: 75px;
+        line-height: 75px;
+        padding: 0 15px;
+        text-decoration: none;
+        text-transform: capitalize;
+        font-size: 16px;
+        color: #fff;
+        transition: 0.5s;
+}
+
+header nav ul li a:hover{
+        background-color: var(--themered) ;
+}
+
+.banner {
+        min-height: 100vh;
+        width:100%;
+        background-image: url("banner.jpg");
+        background-size: cover;
+        background-attachment: fixed;
+}
+
+.banner h1{
+        margin-top:230px ;
+        display: inline-block;
+        font-size: 3.5rem;
+        color: #fff;
+        text-shadow: 0 0 2px #000;
+        width: 50%;
+        line-height: 4.2rem;
+        font-weight: 100;
+}
+
+.banner h1 span{
+        background-color: var(--themered);
+        display: inline-block;
+        line-height: 3.5rem;
+        padding:0 15px;
+        font-weight:600;
+        border-radius: 5px;
+}
+
+.banner p{
+        color: #fff;
+        width: 50%;
+        text-shadow: 0 0 2px #000;
+        margin-top: 10px;
+}
+
+.banner button{
+        background-color: var(--themered);
+        border: 0;
+        outline: none;
+        color: #fff;
+        padding: 10px 15px;
+        margin-top: 20px;
+        font-size:13px;
+        border-radius: 3px;
+        font-weight:600;
+        cursor: pointer;
+        opacity: 1;
+        transition: 0.3s;
+        
+}
+
+.banner button:hover{
+        opacity: 0.7;
+}
+
+
+
+/*'ABOUT US" SECTION STARTS HERE*/
+
+#aboutsection .class{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 50px;
+        position: relative;
+        height: 245px;
+}
+
+#aboutsection .class >div{
+        width:350px;
+        background-color: var(--grey);
+        padding: 35px;
+        color: #444;
+        text-align: center;
+        border-radius: 15px;
+        height: 215px;
+        border: 1px solid #ccc;
+        transition: 0.4s;
+}
+
+#aboutsection .class > div:hover{
+        width:400px;
+        margin-top: -20px;
+        border-color: var(--themered);
+        padding: 55px;
+        height: auto;
+        border: 1px solid var(--themered);
+    }
+
+#aboutsection .class > div .title{
+        font-size: 18px;
+        font-weight: 600;
+        text-transform: uppercase;
+}
+
+#aboutsection .class > div p{
+        font-size: 14px;
+        margin-top: 15px;
+}
+
+#aboutsection .class > div button{
+        border: 1px solid var(--themered);
+        outline: none;
+        padding: 7px 15px;
+        margin-top: 15px;
+        font-size: 12px;
+        border-radius: 3px;
+        cursor: pointer;
+        transition: 0.5s;
+}
+
+#aboutsection .class > div:hover button{
+        background-color: var(--themered);
+        color: #fff;
+}
+/* ABOUT SECTION STARTS HERE */
+
+
+
+/* PROGRAM SECTION STARTS HERE */
+.programs{
+        background-color: #e2e2e2;
+}
+
+.programs .boxcontainer {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-gap: 50px;
+}
+
+.programs .boxcontainer .box{
+        background-color: #fff;
+        text-align: center;
+        padding-bottom: 25px;
+        border-radius: 5px;
+        box-shadow: 0 0 3px o #c5c5c5;
+        position: relative;
+        margin-bottom: 15px;
+}
+
+.programs .boxcontainer .box .cardimage{
+        width: 100%;
+        height:300px;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        overflow: hidden;
+        border-radius:5px 5px 0 0;       
+}
+
+.programs .boxcontainer .box .cardimage:after{
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        filter: grayscale(100%);
+        transition: 0.4s;
+}
+
+.programs .boxcontainer .box:nth-child(1) .cardimage,
+.programs .boxcontainer .box:nth-child(1) .cardimage:after {
+        background-image: url("programs1.jpg");
+}
+
+.programs .boxcontainer .box:nth-child(2) .cardimage,
+.programs .boxcontainer .box:nth-child(2) .cardimage:after {
+        background-image: url("programs2.jpg");
+}
+
+.programs .boxcontainer .box:nth-child(3) .cardimage,
+.programs .boxcontainer .box:nth-child(3) .cardimage:after {
+        background-image: url("programs3.jpg");
+}
+.programs .boxcontainer .box:nth-child(4) .cardimage,
+.programs .boxcontainer .box:nth-child(4) .cardimage:after {
+        background-image: url("programs4.jpg");
+}
+
+.programs .boxcontainer .box:hover .cardimage:after {
+        top:100%;
+
+}
+
+.programs .boxcontainer .box .programtitle{
+        font-size: 16px;
+        margin-top: 15px;
+        font-weight: 600;
+        color: #444;
+}
+
+.programs .boxcontainer .box .donationcount{
+        font-size: 13px;
+        font-weight: 600;
+        color: #444;
+        margin-top: 10px;
+}
+
+.programs .boxcontainer .box .donationcount span{
+        color: var(--themered);
+}
+
+.programs .boxcontainer .box button{
+        position: absolute;
+        left:50%;
+        background-color: var(--themered);
+        color:#fff;
+        transform: translate(-50%);
+        bottom: -15px;
+        border-radius: 60px;
+        padding: 7px 15px;
+        border: 0;
+        outline: none;
+        cursor:pointer;
+        opacity: 1;
+        transition: 0.3s;
+}
+
+.programs .boxcontainer .box button:hover{
+        opacity: 0.7;
+}
+/* PROGRAM SECTION ENDS HERE */
+
+
+/* EDUCATION SECTION STARTS HERE */
+
+.education{
+        height: 100vh;
+        overflow: hidden;
+        position: relative;
+}
+
+.education .sectiontitle{
+        position: relative;
+}
+
+.education .videoplayer{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        transform: translate(-50%, -50%);
+}
+
+.education .sectiontitle{
+        color: #fff;
+        text-shadow: 0 0 4px #000;
+}
+
+.education .educationcontainer {
+        position: absolute;
+        background-color: #00000096;
+        width: 600px;
+        top: 35vh;
+        color: #fff;
+        text-shadow: 0 0 3px #000;
+        padding: 30px;
+}
+
+.education .educationcontainer h3{
+        font-size: 35px;
+        font-weight: 300;
+}
+
+.education .educationcontainer p{
+        font-size: 15px;
+        line-height: 20px;
+        margin: 10px 0 30px;
+}
+
+.education .educationcontainer button{
+        background-color: var(--themered);
+        border: 0;
+        color: #fff;
+        padding: 10px 25px;
+        font-weight: bold;
+        font-size: 14px;
+        outline: none;
+        cursor: pointer;
+        opacity: 1;
+        transition: 0.3s;
+}
+
+.education .educationcontainer button:hover{
+        opacity: 0.7;
+}
+/* EDUCATION SECTION ENDS HERE */
+
+
+/* GALLERY SECTION STARTS HERE */
+.gallery .gallerycontainer{
+        column-count: 4;
+        column-gap: 20px;
+}
+
+.gallery .gallerycontainer .item{
+        position: relative;
+        margin-bottom: 20px;
+        overflow: hidden;
+}
+
+.gallery .gallerycontainer img{
+        width: 100%;
+        display: block;
+        transition: 0.4s;
+}
+
+.gallery .gallerycontainer .title{
+        position: absolute;
+        background-color: var(--grey);
+        padding: 5px;
+        margin: 5px;
+        border-radius: 5px;
+        font-size: 13px;
+        font-weight: bold;
+        opacity: 0;
+        z-index: 1;
+        transition: 0.4s;
+}
+
+.gallery .gallerycontainer .item:hover .title{
+        opacity:1
+}
+
+.gallery .gallerycontainer .item:hover img{
+        transform: scale(1.2);
+}
+
+/* GALLERY SECTION ENDS HERE */
+
+
+/* ABOUT US SECTION STARTS HERE */
+
+.join{
+        background-image: url("./pattern.jpg");
+        color: #fff;
+}
+
+.join .jointitle{
+        font-size: 40px;
+        font-weight: 100;
+}
+
+.join .jointitle span{
+        font-weight: 800;
+}
+
+.join button{
+        padding:7px 15px;
+        margin-top: 20px;
+        border: 0;
+        outline: none;
+        font-weight: 600;
+        font-size: 16px;
+        opacity: 1;
+        transition: 0.3s;
+        cursor: pointer;
+}
+
+.join button:hover{
+        opacity:0.7;
+}
+
+.join button.joinnow{
+        margin-right: 10px;
+        background-color: #424242;
+        color: #fff;
+}
+
+.join button.adoptbtn{
+        background-color: var(--grey);
+}
+/* ABOUT US SECTION ENDS HERE */
+
+/* FOOTER STARTS HERE */
+
+footer{
+        background-color: #181818;
+        color: #7f7f7f;
+        padding: 50px 0;
+        font-size: 14px;
+        width: 100%;
+}
+
+footer .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 50px;
+}
+
+footer .title{
+        font-size: 20px;
+        font-weight: 600;
+        text-transform: uppercase;
+        border-bottom: 2px solid;
+        margin-bottom: 30px;
+        padding: 0 0 5px 0;
+}
+
+footer p{
+        margin-bottom: 10px;
+}
+
+footer .linkscontainer ul{
+        list-style-type: none;
+}
+
+footer ,.linkscontainer ul li a{
+        text-decoration: none;
+        color: #7f7f7f;
+        margin-bottom: 10px;
+        display: inline-block;
+}
+
+footer .newslettercontainer img{
+        height: 40px;
+        margin-bottom: 11px;
+}
+
+footer .newslettercontainer input{
+        background-color: transparent;
+        border: 1px solid #7f7f7f;
+        outline: none;
+        padding: 10px 15px ;
+        width: 100%;
+        margin-top: 10px;
+        color: #ccc;
+        border-radius: 30px;
+}
+/* FOOTER ENDS HERE */
+
+
+/* RESPONSIVE CODE STARTS HERE */
+
+@media screen and (max-width:1180px){
+        .container{
+                width:100%;
+                padding: 0 15px;
+        }
+
+        .education .videoplayer{
+                width: 1280px;
+        }
+        
+        header .container .logo img{
+                padding-left: 15px;
+        }
+}
+
+@media screen and (max-width:1080px){
+        .banner h1{
+                margin-top:200px;
+        }
+        #aboutsection .class{
+                justify-content: space-around;
+                height: auto;
+        }
+
+        #aboutsection .class > div{
+                margin:10px 0;
+        }
+        
+        header .container .logo img{
+                padding-left: 15px;
+        }
+}
+
+
+@media screen and (max-width:1024px){
+        .banner{
+                background-position: 45%;
+        }
+        .banner h1{
+                font-size: 2.5rem;
+        }
+        .programs .boxcontainer{
+                grid-template-columns: repeat(2,1fr);
+        }
+
+        header .container .logo img{
+                padding-left: 15px;
+        }
+}
+
+@media screen and (max-width:768px){
+        header nav{
+                position: relative;
+                border: 2px solid #fff;
+                height: 30px;
+                width: 30px;
+                margin-top: 20px;
+                border-radius:5px ;
+        }
+        header nav:after{
+                top: 17px;
+
+        }
+        header nav:before{
+                top: 7px;
+
+        }
+        header nav:after,header nav:before{
+                content:"";
+                height: 2px;
+                width: 17px;
+                background-color: #fff;
+                display: block;
+                position: absolute;
+                left: 5px;
+        }
+
+        header nav ul{
+                position: absolute;
+                right: -400px;
+                top: 53px;
+                transition: 0.5s;
+        }
+
+        header nav:hover ul{
+                right: 0;
+        }
+
+        header nav ul li{
+                display: block;
+        }
+
+        header nav ul li a{
+                width: 200px;
+                background-color: rgba(0,0,0,0.6);
+        }
+
+        .banner{
+                background-position-x: 65%;
+        }
+
+        .banner p{
+                font-size: 14px;
+        }
+
+        .banner p,.banner h1{
+                width: 70%;
+        }
+
+        #aboutsection .class > div:hover{
+                width: 350px;
+        }
+
+        .education .educationcontainer{
+                width: 96%;
+        }
+
+        .education .educationcontainer h3{
+                font-size: 30px;
+                line-height: 35px;
+        }
+
+        .education .educationcontainer p{
+                margin: 10px 0 20px;
+        }
+
+        .gallery .gallerycontainer{
+                column-count: 2;
+        }
+
+        header .container .logo img{
+                padding-left: 15px;
+        }
+}
+
+@media screen and (max-width:425px){
+        .banner h1{
+                margin-top: 150px;
+                font-size: 2rem;
+                line-height: 3rem;
+        }
+        
+        .banner button{
+                margin-bottom: 10px;
+        }
+
+        #aboutsection p{
+                text-align: justify;
+        }
+
+        #aboutsection .class > div:hover{
+                width: 400px;
+                margin-top: 10px;
+                padding: 35px;
+        }
+
+        .programs .boxcontainer{
+                grid-template-columns: 1fr;
+        }
+
+        .education .videoplayer{
+                width: 1400px;
+        }
+
+        .education .educationcontainer{
+                width: 93%;
+        }
+
+        footer .container{
+                grid-template-columns: 1fr;
+        }
+
+        header .container .logo img{
+                padding-left: 15px;
+        }
+
+}
+
+
+
+
+/* RESPONSIVE CODE ENDS HERE */
